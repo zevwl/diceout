@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DiceOut</string>
+    <string name="welcome">Welcome to DiceOut!</string>
+    <string name="action_settings">Settings</string>
+    <string name="roll_result_default">Let\'s Play!</string>
+    <string name="roll_button_default">Roll!</string>
+    <string name="score_text" formatted="false">Score: %d</string>
+    <string name="score_default">Score: 0</string>
+    <string name="triples_message" formatted="false">You rolled a triple %d! You score %d points!</string>
+    <string name="doubles_message">You rolled doubles for 50 points!</string>
+    <string name="no_match_massage">You didn\'t score this roll. Try again.</string>
+</resources>
