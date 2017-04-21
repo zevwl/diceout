@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         rollResult.setText(message);
-        scoreText.setText(getString(R.string.score_text, score));
+        setScoreText(score);
     }
 
     @Override
@@ -140,6 +140,24 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_reset_score) {
+            resetScore();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    private void resetScore() {
+        updateScore(0);
+    }
+
+    private void updateScore(int score) {
+        this.score = score;
+        setScoreText(score);
+    }
+
+    private void setScoreText(int score) {
+        scoreText.setText(getString(R.string.score_text, score));
     }
 }
